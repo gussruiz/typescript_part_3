@@ -2,7 +2,7 @@ export abstract class View<T> {
 
     protected elemento: HTMLElement;
     private escapar = false;
-
+    
     constructor(seletor: string, escapar?: boolean) {
         const elemento = document.querySelector(seletor);
         if (elemento) {
